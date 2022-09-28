@@ -1,17 +1,18 @@
 const person = {
   firstName: 'Joseph',
   lastName: 'Park',
-  hobby: 'basketball',
-  job: 'Medical Assistant',
-  previousJob: 'Student'
+  hobby: 'basketball'
 };
 console.log(person);
 
-const fullName = 'Joseph' + ' Park';
-console.log("The person's name is:", fullName);
+var fullName = person.fullName + ' ' + person.lastName;
+console.log("The person's name is: ", fullName + '.');
 
-console.log("The person's current job is:", person.job);
+person.job = 'Medical Assistant';
+console.log("The person's current job is:", person.job + '.');
 
-console.log("The person's previous job is:", person.previousJob);
+person.previousJob = 'student';
 
-console.log(person);
+console.log("The person's previous job is: ", person.previousJob + '.');
+
+console.log('The complete person object: ', person);
